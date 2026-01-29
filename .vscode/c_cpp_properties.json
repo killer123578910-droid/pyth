@@ -9,11 +9,15 @@
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
+<<<<<<< HEAD
             ],
             "cStandard": "c17",
             "cppStandard": "gnu++17",
             "intelliSenseMode": "windows-gcc-x64",
             "compilerPath": "D:/min/ucrt64/bin/g++.exe"
+=======
+            ]
+>>>>>>> py2
         }
     ],
     "version": 4
