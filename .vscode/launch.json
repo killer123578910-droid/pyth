@@ -2,74 +2,81 @@
 <<<<<<< HEAD
     "configurations": [
         {
-=======
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "C/C++: gcc.exe build and debug active file",
-            "type": "cppdbg",
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
             "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "D:\\mys\\ucrt64\\bin\\gdb.exe",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "C/C++: gcc.exe build active file"
+            "program": "${file}",
+            "console": "integratedTerminal"
         },
         {
->>>>>>> py2
-            "name": "C/C++: g++.exe build and debug active file",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-<<<<<<< HEAD
-            "cwd": "D:/min/ucrt64/bin",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "D:\\min\\ucrt64\\bin\\gdb.exe",
 =======
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "D:\\mys\\ucrt64\\bin\\gdb.exe",
->>>>>>> py2
-            "setupCommands": [
+    "version": "0.2.0",
+            "configurations": [
                 {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
+                    "name": "C/C++: gcc.exe build and debug active file",
+                    "type": "cppdbg",
+                    "request": "launch",
+                    "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                    "args": [],
+                    "stopAtEntry": false,
+                    "cwd": "${fileDirname}",
+                    "environment": [],
+                    "externalConsole": false,
+                    "MIMode": "gdb",
+                    "miDebuggerPath": "D:\\mys\\ucrt64\\bin\\gdb.exe",
+                    "setupCommands": [
+                        {
+                            "description": "Enable pretty-printing for gdb",
+                            "text": "-enable-pretty-printing",
+                            "ignoreFailures": true
+                        },
+                        {
+                            "description": "Set Disassembly Flavor to Intel",
+                            "text": "-gdb-set disassembly-flavor intel",
+                            "ignoreFailures": true
+                        }
+                    ],
+                    "preLaunchTask": "C/C++: gcc.exe build active file"
                 },
                 {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "C/C++: g++.exe build active file"
-        }
-<<<<<<< HEAD
-    ],
-    "version": "2.0.0"
-=======
-    ]
 >>>>>>> py2
-}
+            "name": "C/C++: g++.exe build and debug active file",
+                    "type": "cppdbg",
+                    "request": "launch",
+                    "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                    "args": [],
+                    "stopAtEntry": false,
+<<<<<<< HEAD
+            "cwd": "D:/min/ucrt64/bin",
+                    "environment": [],
+                    "externalConsole": false,
+                    "MIMode": "gdb",
+                    "miDebuggerPath": "D:\\min\\ucrt64\\bin\\gdb.exe",
+=======
+            "cwd": "${fileDirname}",
+                    "environment": [],
+                    "externalConsole": false,
+                    "MIMode": "gdb",
+                    "miDebuggerPath": "D:\\mys\\ucrt64\\bin\\gdb.exe",
+>>>>>>> py2
+            "setupCommands": [
+                        {
+                            "description": "Enable pretty-printing for gdb",
+                            "text": "-enable-pretty-printing",
+                            "ignoreFailures": true
+                        },
+                        {
+                            "description": "Set Disassembly Flavor to Intel",
+                            "text": "-gdb-set disassembly-flavor intel",
+                            "ignoreFailures": true
+                        }
+                    ],
+                    "preLaunchTask": "C/C++: g++.exe build active file"
+                }
+<<<<<<< HEAD
+            ],
+            "version": "2.0.0"
+=======
+        ]
+>>>>>>> py2
+    }
