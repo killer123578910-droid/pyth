@@ -1,1 +1,1 @@
-{"name":"PY_02005_Cap_Nghich_The","url":"https://code.ptit.edu.vn/student/question/PY02005","tests":[{"input":"5\n2 4 1 3 5","output":"3","id":1770104290326}],"srcPath":"d:\\realshit\\PY_02005_Cap_Nghich_The.py"}
+{"name":"PY_02005_Cap_Nghich_The","url":"https://code.ptit.edu.vn/student/question/PY02005","tests":[{"id":1770104290326,"input":"5\n2 4 1 3 5","output":"3"}],"srcPath":"d:\\realshit\\PY_02005_Cap_Nghich_The.py"}
