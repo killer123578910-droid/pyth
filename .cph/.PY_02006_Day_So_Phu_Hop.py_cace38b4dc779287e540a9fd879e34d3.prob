@@ -1,0 +1,1 @@
+{"name":"PY_02006_Day_So_Phu_Hop","url":"https://code.ptit.edu.vn/student/question/PY02006","tests":[{"id":1770186164224,"input":"2\n4\n7 5 3 2\n5 4 8 7\n8\n7 5 3 2 5 105 45 10\n2 4 0 5 6 9 75 84","output":"YES\nNO"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_02006_Day_So_Phu_Hop.py"}
