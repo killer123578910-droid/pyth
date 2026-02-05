@@ -1,0 +1,1 @@
+{"name":"PYKT_081_Dia_Chi_Ip","url":"https://code.ptit.edu.vn/student/question/PYKT081","tests":[{"id":1770275578377,"input":"2\n192.168.1.1\n256.255.255.255","output":"YES\nNO"}],"srcPath":"d:\\realshit\\PYKT_081_Dia_Chi_Ip.py"}
