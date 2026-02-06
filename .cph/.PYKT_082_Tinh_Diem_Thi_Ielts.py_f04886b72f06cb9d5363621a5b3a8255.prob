@@ -1,0 +1,1 @@
+{"name":"PYKT_082_Tinh_Diem_Thi_Ielts","url":"https://code.ptit.edu.vn/student/question/PYKT082","tests":[{"id":1770376901602,"input":"2\n15 25 5.0 5.5\n22 32 6.0 6.0","output":"5.5\n6.0"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PYKT_082_Tinh_Diem_Thi_Ielts.py"}
