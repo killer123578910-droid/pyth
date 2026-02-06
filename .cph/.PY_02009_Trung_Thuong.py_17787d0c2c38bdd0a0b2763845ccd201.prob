@@ -1,1 +1,1 @@
-{"name":"PY_02009_Trung_Thuong","url":"https://code.ptit.edu.vn/student/question/PY02009","tests":[{"input":"3\n3\n999\n999\n19\n4\n13\n333\n333\n13\n3\n11\n12\n13","output":"999\n13\n11","id":1770194634421}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_02009_Trung_Thuong.py"}
+{"name":"PY_02009_Trung_Thuong","url":"https://code.ptit.edu.vn/student/question/PY02009","tests":[{"id":1770194634421,"input":"3\n3\n999\n999\n19\n4\n13\n333\n333\n13\n3\n11\n12\n13","output":"999\n13\n11"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_02009_Trung_Thuong.py"}
