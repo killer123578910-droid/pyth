@@ -1,0 +1,1 @@
+{"name":"PYKT_080_Thong_Ke_Dich_Te","url":"https://code.ptit.edu.vn/student/question/PYKT080","tests":[{"id":1770269974923,"input":"4 4\n1 1 0 1\n2 -1 4 5\n0 0 0 0\n1 0 2 1","output":" 8"}],"srcPath":"d:\\realshit\\PYKT_080_Thong_Ke_Dich_Te.py"}
