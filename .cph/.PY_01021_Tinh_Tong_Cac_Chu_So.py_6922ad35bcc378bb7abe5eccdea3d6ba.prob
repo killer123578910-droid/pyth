@@ -1,1 +1,1 @@
-{"name":"PY_01021_Tinh_Tong_Cac_Chu_So","url":"https://code.ptit.edu.vn/student/question/PY01021","tests":[{"input":"2\nAC2BEW3\nACCBA10D2EW30","output":"ABCEW5\nAABCCDEW6","id":1770996080111}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_01021_Tinh_Tong_Cac_Chu_So.py"}
+{"name":"PY_01021_Tinh_Tong_Cac_Chu_So","url":"https://code.ptit.edu.vn/student/question/PY01021","tests":[{"id":1770996080111,"input":"2\nAC2BEW3\nACCBA10D2EW30","output":"ABCEW5\nAABCCDEW6"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_01021_Tinh_Tong_Cac_Chu_So.py"}
