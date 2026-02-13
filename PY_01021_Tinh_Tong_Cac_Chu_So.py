@@ -1,0 +1,3 @@
+def sovle():
+    n=input()
+    
