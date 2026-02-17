@@ -1,0 +1,1 @@
+{"name":"PY_01027_So_Loc_Phat_Dep","url":"https://code.ptit.edu.vn/student/question/PY01027","tests":[{"input":"666666","output":"YES","id":1771321723875},{"input":"668688","output":"YES","id":1771321723876},{"id":1771321723877,"input":"886236","output":"NO"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_01027_So_Loc_Phat_Dep.py"}
