@@ -1,2 +1,3 @@
-n='12123'
-print(n[-4:])
+n='A'
+print(ord(n)+1)
+print(n)

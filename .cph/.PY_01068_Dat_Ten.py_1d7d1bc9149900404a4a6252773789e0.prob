@@ -1,0 +1,1 @@
+{"name":"PY_01068_Dat_Ten","url":"https://code.ptit.edu.vn/student/question/PY01068","tests":[{"input":"6 2\nDONG TAY NAM BAC TAY BAC","output":"BAC DONG\nBAC NAM\nBAC TAY\nDONG NAM\nDONG TAY\nNAM TAY","id":1771581744624}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_01068_Dat_Ten.py"}

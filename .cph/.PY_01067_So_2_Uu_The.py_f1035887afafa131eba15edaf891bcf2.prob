@@ -1,0 +1,1 @@
+{"name":"PY_01067_So_2_Uu_The","url":"https://code.ptit.edu.vn/student/question/PY01067","tests":[{"input":"2\n5\n10","output":"2 22 122 202 212\n2 22 122 202 212 220 221 222 1222 2022","id":1771583315897}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_01067_So_2_Uu_The.py"}
