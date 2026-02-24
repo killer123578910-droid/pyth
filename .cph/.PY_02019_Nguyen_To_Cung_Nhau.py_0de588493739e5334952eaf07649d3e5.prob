@@ -1,0 +1,1 @@
+{"name":"PY_02019_Nguyen_To_Cung_Nhau","url":"https://code.ptit.edu.vn/student/question/PY02019","tests":[{"input":"5\n3 7 9 6 13","output":"3 7\n3 13\n6 7\n6 13\n7 9\n7 13\n9 13","id":1771645999147}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_02019_Nguyen_To_Cung_Nhau.py"}
