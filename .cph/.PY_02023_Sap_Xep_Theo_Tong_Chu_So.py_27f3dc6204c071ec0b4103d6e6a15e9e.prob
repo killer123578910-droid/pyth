@@ -1,0 +1,1 @@
+{"name":"PY_02023_Sap_Xep_Theo_Tong_Chu_So","url":"https://code.ptit.edu.vn/student/question/PY02023","tests":[{"id":1772009444991,"input":"1\n8\n143 43 22 99 7 9 1111 10000000","output":"10000000 22 1111 7 43 143 9 99"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_02023_Sap_Xep_Theo_Tong_Chu_So.py"}
