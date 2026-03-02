@@ -1,0 +1,1 @@
+{"name":"PY_02010_Lon_Nhat_Va_Nho_Nhat","url":"https://code.ptit.edu.vn/student/question/PY02010","tests":[{"id":1772432192993,"input":"5\n1\n2\n3\n4\n5\n3\n001\n22\n33333333333333333333333333333333333\n3\n1\n1\n1\n0","output":"1 5\n1 33333333333333333333333333333333333\nBANG NHAU"}],"srcPath":"d:\\realshit\\PY_02010_Lon_Nhat_Va_Nho_Nhat.py"}
