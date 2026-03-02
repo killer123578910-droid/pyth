@@ -1,1 +1,1 @@
-{"name":"PY_02011_Bien_Doi_Ve_Day_Bang_Nhau","url":"https://code.ptit.edu.vn/student/question/PY02011","tests":[{"input":"8\n13 5 8 7 9 15 26 34","output":"59 13","id":1772435285862}],"srcPath":"d:\\realshit\\PY_02011_Bien_Doi_Ve_Day_Bang_Nhau.py"}
+{"name":"PY_02011_Bien_Doi_Ve_Day_Bang_Nhau","url":"https://code.ptit.edu.vn/student/question/PY02011","tests":[{"id":1772435285862,"input":"8\n13 5 8 7 9 15 26 34","output":"59 13"}],"srcPath":"d:\\realshit\\PY_02011_Bien_Doi_Ve_Day_Bang_Nhau.py"}
