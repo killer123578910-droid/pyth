@@ -1,0 +1,1 @@
+{"name":"PY_02035_Nguong_Toi_Thieu","url":"https://code.ptit.edu.vn/student/question/PY02035","tests":[{"input":"124356141111434356149\n2","output":"11 2\n14 2\n43 3\n56 2","id":1772551085975},{"id":1772551085976,"input":"124356141111434356149\n10","output":"NOT FOUND"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_02035_Nguong_Toi_Thieu.py"}
