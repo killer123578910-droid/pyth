@@ -1,0 +1,1 @@
+{"name":"PY_02030_Phan_Chia_Nguyen_To","url":"https://code.ptit.edu.vn/student/question/PY02030","tests":[{"input":"10\n3 6 7 3 4 7 3 6 4 4","output":"0","id":1772526595476},{"input":"10\n3 6 7 3 5 7 3 6 6 7","output":"NOT FOUND","id":1772526595477}],"srcPath":"d:\\realshit\\PY_02030_Phan_Chia_Nguyen_To.py"}
