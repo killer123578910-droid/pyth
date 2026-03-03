@@ -1,1 +1,1 @@
-{"name":"PY_02048_Tach_Nhom_Toi_Uu","url":"https://code.ptit.edu.vn/student/question/PY02048","tests":[{"input":"7 1\n2 6 1 7 3 4 9","output":"3","id":1772552823321}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_02048_Tach_Nhom_Toi_Uu.py"}
+{"name":"PY_02048_Tach_Nhom_Toi_Uu","url":"https://code.ptit.edu.vn/student/question/PY02048","tests":[{"id":1772552823321,"input":"7 1\n2 6 1 7 3 4 9","output":"3"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_02048_Tach_Nhom_Toi_Uu.py"}
