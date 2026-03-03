@@ -1,4 +1,4 @@
-MAX = 1001
+MAX = 1000001
 snt = [1] * (MAX + 1)
 snt[0] = snt[1] = 0
 
@@ -15,10 +15,12 @@ for i in ar:
 ar=list(dictt)
 prefix=[0]*len(ar)
 prefix[0]=ar[0]
+flag=1
 for i in range(1,len(ar)):
     prefix[i]=prefix[i-1]+ar[i]
-for i in len(ar):
+for i in range(len(ar)):
     if snt[prefix[i]] and snt[prefix[len(ar)-1]-prefix[i]]:
         print(i)
+        flag=0
         break
-
+if flag: print("NOT FOUND")
