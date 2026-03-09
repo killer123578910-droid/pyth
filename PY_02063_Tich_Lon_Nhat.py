@@ -1,0 +1,6 @@
+n=int(input())
+ar=sorted(list(map(int,input().split())),reverse=True)
+l=len(ar)
+max3=max(ar[0]*ar[1]*ar[2],ar[0]*ar[l-1]*ar[l-2])
+max2=max(ar[0]*ar[1],ar[l-1]*ar[l-2])
+print(max(max2,max3))
