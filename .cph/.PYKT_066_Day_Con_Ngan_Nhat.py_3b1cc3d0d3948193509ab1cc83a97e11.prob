@@ -1,0 +1,1 @@
+{"name":"PYKT_066_Day_Con_Ngan_Nhat","url":"https://code.ptit.edu.vn/student/question/PYKT066","tests":[{"input":"3\n8 3\n6 9 7 10 12 24 36 27\n4 3\n2 4 6 8\n4 6\n1 2 3 6","output":"2\n-1\n1","id":1773103249135}],"srcPath":"d:\\realshit\\PYKT_066_Day_Con_Ngan_Nhat.py"}
