@@ -1,0 +1,1 @@
+{"name":"PYKT_090_Danh_Sach_Email","url":"https://code.ptit.edu.vn/student/question/PYKT090","tests":[{"id":1774486851674,"input":"nguyenmanhson@gmail.com\nsonnm@ptit.edu.vn\nNGUYENMANHSON@gmail.com\nSonNM@ptit.edu.vn\nNguyenManhSon@GMAIL.com","output":"nguyenmanhson@gmail.com\nsonnm@ptit.edu.vn"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PYKT_090_Danh_Sach_Email.py"}
