@@ -1,0 +1,1 @@
+{"name":"Do_Thi_Day_Du","url":"https://code.ptit.edu.vn/student/question/M0xEYytUcm1VZW1jVDJhcGFTY00yZz09","tests":[{"input":"3\n2\n1 2\n2 3","output":"NO","id":1775526690947},{"input":"4\n2\n1 3\n2 4","output":"YES","id":1775526690948}],"srcPath":"d:\\realshit\\Do_Thi_Day_Du.js"}
