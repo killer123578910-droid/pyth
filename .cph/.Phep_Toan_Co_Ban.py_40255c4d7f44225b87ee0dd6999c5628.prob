@@ -1,0 +1,1 @@
+{"name":"Phep_Toan_Co_Ban","url":"https://code.ptit.edu.vn/student/question/ZE5VV1BVYWl2T0VtZ3p1Wi9NZ3VNdz09","tests":[{"input":"2\n?0 ? 12 = 28\n40 / ?3 = ??","output":"40 - 12 = 28\nWRONG PROBLEM!","id":1775521495840}],"srcPath":"d:\\realshit\\Phep_Toan_Co_Ban.py"}
