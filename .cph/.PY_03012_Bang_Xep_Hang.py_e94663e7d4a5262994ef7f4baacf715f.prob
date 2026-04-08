@@ -1,0 +1,1 @@
+{"name":"PY_03012_Bang_Xep_Hang","url":"https://code.ptit.edu.vn/student/question/PY03012","tests":[{"id":1775653369585,"input":"2\nNguyen Van Nam\n168 600\nTran Thi Ngoc\n168 600","output":"Nguyen Van Nam 168 600\nTran Thi Ngoc 168 600"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PY_03012_Bang_Xep_Hang.py"}
