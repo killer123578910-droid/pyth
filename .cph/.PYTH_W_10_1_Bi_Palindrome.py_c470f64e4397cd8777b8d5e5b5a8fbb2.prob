@@ -1,0 +1,1 @@
+{"name":"PYTH__W_10__1_Bi_Palindrome","url":"https://code.ptit.edu.vn/student/question/PYTH_W10_1","tests":[{"id":1775792924059,"input":"0 2 10\n11 2 10\n6 7 16\n-1","output":"YES\nNO\nYES"}],"srcPath":"d:\\dh\\lapchinh\\icpc\\pyth\\PYTH_W_10_1_Bi_Palindrome.py"}
