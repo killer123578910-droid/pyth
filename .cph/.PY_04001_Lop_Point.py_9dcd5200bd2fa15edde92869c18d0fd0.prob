@@ -1,0 +1,1 @@
+{"name":"PY_04001_Lop_Point","url":"https://code.ptit.edu.vn/student/question/PY04001","tests":[{"id":1776045356009,"input":"2\n0 0 0 5\n0 199 5 6","output":"5.0000\n193.0648"}],"srcPath":"d:\\realshit\\PY_04001_Lop_Point.py"}
