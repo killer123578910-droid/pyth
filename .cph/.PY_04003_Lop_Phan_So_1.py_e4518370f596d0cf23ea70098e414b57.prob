@@ -1,1 +1,1 @@
-{"name":"PY_04003_Lop_Phan_So_1","url":"https://code.ptit.edu.vn/student/question/PY04003","tests":[{"input":"123 456","output":"41/152","id":1776050163585}],"srcPath":"d:\\realshit\\PY_04003_Lop_Phan_So_1.py"}
+{"name":"PY_04003_Lop_Phan_So_1","url":"https://code.ptit.edu.vn/student/question/PY04003","tests":[{"id":1776050163585,"input":"123 456","output":"41/152"}],"srcPath":"d:\\realshit\\PY_04003_Lop_Phan_So_1.py"}
