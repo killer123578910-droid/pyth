@@ -99,10 +99,12 @@ def delete():
 
 
 #khung tkinkter
+
 goc=ctk.CTk()
 goc.title("Uniserver")
 goc.geometry("1080x720")
-columns=("id","name","major","gpa")
+ctk.set_appearance_mode("dark")
+columns=("ID","Name","Major","GPA")
 
 # data = [
 #     ("Nguyễn Văn An", "Công nghệ thông tin", 3.2),
@@ -119,11 +121,32 @@ columns=("id","name","major","gpa")
 # multiinit(data)
 
 #bang sql
-tree=ttk.Treeview(goc,column=columns,show="headings")
+tree=ttk.Treeview(goc,column=columns,show="headings",selectmode="extended")
 for col in columns:
     tree.heading(col,text=col)
     tree.column(col,width=100)
+style = ttk.Style()
+style.theme_use("default")
+style.map("Treeview",
+          background=[("selected", "#ED1111")],
+          foreground=[("selected", "white")])
+style.configure("Treeview",
+    background="#2B2B2B",
+    foreground="white",
+    rowheight=25,
+    fieldbackground="#2b2b2b",
+    font=("Times New Roman",16)
+)
+
+style.configure("Treeview.Heading",
+    background="#B5B4AE",
+    foreground="white",
+    font=("Times New Roman",20,"bold")
+
+)
+
 tree.pack(expand=True, fill='both')
+
 
 
 
@@ -132,46 +155,46 @@ tree.pack(expand=True, fill='both')
 frame = ctk.CTkFrame(goc)
 frame.pack(pady=10)
 
-entry0 = ctk.CTkEntry(frame,placeholder_text="id" ,width=100)
+entry0 = ctk.CTkEntry(frame,placeholder_text="id" ,width=100,font=("Times New Roman",14))
 entry0.grid(row=0, column=0, padx=2)
 
-entry1 = ctk.CTkEntry(frame,placeholder_text="nhập tên" ,width=100)
+entry1 = ctk.CTkEntry(frame,placeholder_text="nhập tên" ,width=100,font=("Times New Roman",14))
 entry1.grid(row=0, column=1, padx=2)
 
-entry2 = ctk.CTkEntry(frame,placeholder_text="major" ,width=100)
+entry2 = ctk.CTkEntry(frame,placeholder_text="major" ,width=100,font=("Times New Roman",14))
 entry2.grid(row=0, column=2, padx=2)
 
-entry3 = ctk.CTkEntry(frame,placeholder_text="gpa" ,width=100)
+entry3 = ctk.CTkEntry(frame,placeholder_text="gpa" ,width=100,font=("Times New Roman",14))
 entry3.grid(row=0, column=3, padx=2)
 
-entry4 = ctk.CTkEntry(frame,placeholder_text="0:cả bảng,1:gpa>3.0" ,width=100)
+entry4 = ctk.CTkEntry(frame,placeholder_text="0:cả bảng,1:gpa>3.0" ,width=100,font=("Times New Roman",12))
 entry4.grid(row=0, column=4, padx=2)
 
 
 
 btn1 = ctk.CTkButton(frame, text="Insert",width=100,
-                    command=lambda: insert(combine(entry1.get(),entry2.get(),entry3.get()),entry4.get()))
+                    command=lambda: insert(combine(entry1.get(),entry2.get(),entry3.get()),entry4.get()),font=("Times New Roman",16,"bold"),fg_color="#0940C1")
 btn1.grid(row=1, column=3, padx=2)
 
 
 btn2 = ctk.CTkButton(frame, text="Reset hệ thống",width=100,
-                    command=lambda:taobang())
+                    command=lambda:taobang(),font=("Times New Roman",16,"bold"),fg_color="#0940C1")
 btn2.grid(row=1, column=0, padx=2)
 
 
 btn3 = ctk.CTkButton(frame, text="Update",width=100,
-                    command=lambda:update(entry1.get(),entry3.get(),entry0.get()))
+                    command=lambda:update(entry1.get(),entry3.get(),entry0.get()),font=("Times New Roman",16,"bold"),fg_color="#0940C1")
 btn3.grid(row=1, column=1, padx=2)
 
 
 btn4 = ctk.CTkButton(frame, text="Truy vấn",width=100,
-                    command=lambda:show(entry4.get()))
+                    command=lambda:show(entry4.get()),font=("Times New Roman",16,"bold"),fg_color="#0940C1")
 btn4.grid(row=1, column=2, padx=2)
 
 
-btn5 = ctk.CTkButton(frame, text="Xóa",width=100,command=delete)
+btn5 = ctk.CTkButton(frame, text="Xóa",width=100,command=delete,font=("Times New Roman",16,"bold"),fg_color="#0940C1")
 btn5.grid(row=1, column=4, padx=2)
-
+show()
 
 
 
