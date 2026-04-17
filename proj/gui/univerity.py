@@ -2,9 +2,12 @@ import sqlite3
 import customtkinter as ctk
 import tkinter as tk
 from tkinter import ttk
+import os
+cur_dir = os.path.dirname(os.path.abspath(__file__)) # duong dan services.py
+dp_path = os.path.abspath(os.path.join(cur_dir, "university.db")) # tao duong dan toi players.db
 #quickinit
 def multiinit(vst):
-        conn=sqlite3.connect("D:\\realshit\\proj\\gui\\university.db")
+        conn=sqlite3.connect(dp_path)
         cur=conn.cursor()
         for k in vst:
             cur.execute("""
@@ -15,7 +18,7 @@ def multiinit(vst):
 
 #function  
 def taobang():
-    conn=sqlite3.connect("D:\\realshit\\proj\\gui\\university.db")
+    conn=sqlite3.connect(dp_path)
     cur=conn.cursor()
     cur.execute("DROP TABLE IF EXISTS uni")
     cur.execute("""
@@ -37,7 +40,7 @@ def combine(a,b,c):
     return kq
 
 def insert(vst):
-    conn=sqlite3.connect("D:\\realshit\\proj\\gui\\university.db")
+    conn=sqlite3.connect(dp_path)
     cur=conn.cursor()
     temp=vst.split(",")
     cur.execute("""
@@ -52,23 +55,22 @@ def insert(vst):
 
 
 def truyvan(inp):
-    conn=sqlite3.connect("D:\\realshit\\proj\\gui\\university.db")
+    conn=sqlite3.connect(dp_path)
     cur=conn.cursor()
-    cur.execute("SELECT * FROM uni")
-    liste=cur.fetchall()
-    cur.close()
     if inp=="0":
+        cur.execute("SELECT * FROM uni")
+        liste=cur.fetchall()
+        cur.close()
         return liste
     else:
-        temp=[]
-        for k in liste:
-            if float(k[3])>3.0:
-                temp.append(k)
-        return temp
+        cur.execute("SELECT * FROM uni WHERE gpa> 3.0")
+        liste=cur.fetchall()
+        cur.close()
+        return liste
     
 
 def update(namee,gpaa,idd):
-    conn=sqlite3.connect("D:\\realshit\\proj\\gui\\university.db")
+    conn=sqlite3.connect(dp_path)
     cur=conn.cursor()
     cur.execute("""
                 UPDATE uni
@@ -89,7 +91,7 @@ def show(key="0"):
 
 
 def delete():
-    conn=sqlite3.connect("D:\\realshit\\proj\\gui\\university.db")
+    conn=sqlite3.connect(dp_path)
     cur=conn.cursor()
     cur.execute("DELETE FROM uni WHERE gpa < 2.0")
     conn.commit()
@@ -173,7 +175,7 @@ entry4.grid(row=0, column=4, padx=2)
 
 
 btn1 = ctk.CTkButton(frame, text="Insert",width=100,
-                    command=lambda: insert(combine(entry1.get(),entry2.get(),entry3.get()),entry4.get()),font=("Times New Roman",16,"bold"),fg_color="#0940C1")
+                    command=lambda: insert(combine(entry1.get(),entry2.get(),entry3.get())),font=("Times New Roman",16,"bold"),fg_color="#0940C1")
 btn1.grid(row=1, column=3, padx=2)
 
 

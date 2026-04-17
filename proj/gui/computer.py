@@ -51,6 +51,8 @@ buttons = [
     ["1", "2", "3", "-"],
     ["0", ".", "=", "+"]
 ]
+
+
 app.bind("<Return>", lambda e: calculate())
 app.bind("<BackSpace>", lambda e: acclear())
 frame = ctk.CTkFrame(app)
@@ -68,4 +70,5 @@ for i, row in enumerate(buttons):
             btn = ctk.CTkButton(frame, text=text, width=75,height=45,
                                 command=lambda t=text: click(t),font=("Arial",15,"bold"),fg_color="#5AA359")
         btn.grid(row=i, column=j, padx=2, pady=2)
+
 app.mainloop()
