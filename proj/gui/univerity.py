@@ -176,7 +176,7 @@ entry4.grid(row=0, column=4, padx=2)
 
 btn1 = ctk.CTkButton(frame, text="Insert",width=100,
                     command=lambda: insert(combine(entry1.get(),entry2.get(),entry3.get())),font=("Times New Roman",16,"bold"),fg_color="#0940C1")
-btn1.grid(row=1, column=3, padx=2)
+btn1.grid(row=1, column=2, padx=2)
 
 
 btn2 = ctk.CTkButton(frame, text="Reset hệ thống",width=100,
@@ -191,11 +191,11 @@ btn3.grid(row=1, column=1, padx=2)
 
 btn4 = ctk.CTkButton(frame, text="Truy vấn trên 3.0 gpa",width=100,
                     command=lambda:show(entry4.get()),font=("Times New Roman",16,"bold"),fg_color="#0940C1")
-btn4.grid(row=1, column=2, padx=2)
+btn4.grid(row=1, column=4, padx=2)
 
 
 btn5 = ctk.CTkButton(frame, text="Xóa SV dưới 2.0 gpa",width=100,command=delete,font=("Times New Roman",16,"bold"),fg_color="#0940C1")
-btn5.grid(row=1, column=4, padx=2)
+btn5.grid(row=1, column=3, padx=2)
 show()
 
 
