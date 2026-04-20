@@ -157,19 +157,19 @@ tree.pack(expand=True, fill='both')
 frame = ctk.CTkFrame(goc)
 frame.pack(pady=10)
 
-entry0 = ctk.CTkEntry(frame,placeholder_text="id" ,width=100,font=("Times New Roman",14))
+entry0 = ctk.CTkEntry(frame,placeholder_text="id" ,width=120,font=("Times New Roman",14))
 entry0.grid(row=0, column=0, padx=2)
 
-entry1 = ctk.CTkEntry(frame,placeholder_text="nhập tên" ,width=100,font=("Times New Roman",14))
+entry1 = ctk.CTkEntry(frame,placeholder_text="nhập tên" ,width=120,font=("Times New Roman",14))
 entry1.grid(row=0, column=1, padx=2)
 
-entry2 = ctk.CTkEntry(frame,placeholder_text="major" ,width=100,font=("Times New Roman",14))
+entry2 = ctk.CTkEntry(frame,placeholder_text="major" ,width=120,font=("Times New Roman",14))
 entry2.grid(row=0, column=2, padx=2)
 
-entry3 = ctk.CTkEntry(frame,placeholder_text="gpa" ,width=100,font=("Times New Roman",14))
+entry3 = ctk.CTkEntry(frame,placeholder_text="gpa" ,width=120,font=("Times New Roman",14))
 entry3.grid(row=0, column=3, padx=2)
 
-entry4 = ctk.CTkEntry(frame,placeholder_text="0:cả bảng,1:gpa>3.0" ,width=100,font=("Times New Roman",12))
+entry4 = ctk.CTkEntry(frame,placeholder_text="0:cả bảng,1:gpa>3.0" ,width=120,font=("Times New Roman",12))
 entry4.grid(row=0, column=4, padx=2)
 
 
@@ -189,12 +189,12 @@ btn3 = ctk.CTkButton(frame, text="Update",width=100,
 btn3.grid(row=1, column=1, padx=2)
 
 
-btn4 = ctk.CTkButton(frame, text="Truy vấn",width=100,
+btn4 = ctk.CTkButton(frame, text="Truy vấn trên 3.0 gpa",width=100,
                     command=lambda:show(entry4.get()),font=("Times New Roman",16,"bold"),fg_color="#0940C1")
 btn4.grid(row=1, column=2, padx=2)
 
 
-btn5 = ctk.CTkButton(frame, text="Xóa",width=100,command=delete,font=("Times New Roman",16,"bold"),fg_color="#0940C1")
+btn5 = ctk.CTkButton(frame, text="Xóa SV dưới 2.0 gpa",width=100,command=delete,font=("Times New Roman",16,"bold"),fg_color="#0940C1")
 btn5.grid(row=1, column=4, padx=2)
 show()
 
