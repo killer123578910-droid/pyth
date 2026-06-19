@@ -1,0 +1,135 @@
+═══════════════════════════════════════════════════════════════════════════
+Token Analysis: Session ses_120fd3817ffeSbHEMS2ZK9VGte
+Model: approx
+═══════════════════════════════════════════════════════════════════════════
+
+WARNINGS
+───────────────────────────────────────────────────
+- Model 'openrouter/google/gemma-4-31b-it:free' is not currently supported by a model-specific tokenizer. Token counts use an approximate character-based fallback.
+
+TOKEN BREAKDOWN BY CATEGORY
+─────────────────────────────────────────────────────────────────────────
+Estimated using tokenizer analysis of message content:
+
+Input Categories:
+  SYSTEM    ████████████████████████████░░    94.1% (13,347)
+  USER      ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░        5.9% (831)
+
+  Subtotal: 14,178 estimated input tokens
+  Note: inferred system/overhead values are heuristic estimates from API telemetry.
+
+Output Categories:
+  ASSISTANT ████████████████░░░░░░░░░░░░░░     54.2% (8,374)
+  REASONING ██████████████░░░░░░░░░░░░░░░░     45.8% (7,082)
+
+  Subtotal: 15,456 estimated output tokens
+
+Local Total: 29,634 tokens (estimated)
+
+TOOL USAGE BREAKDOWN
+─────────────────────────────────────────────────────────────────────────
+
+TOP CONTRIBUTORS
+─────────────────────────────────────────────────────────────────────────
+• System (inferred from API telemetry) 13,347 tokens (45.0%)
+• Reasoning#5                  1,428 tokens (4.8%)
+• Assistant#7                  1,418 tokens (4.8%)
+• Assistant#8                  1,319 tokens (4.5%)
+• Reasoning#4                  1,067 tokens (3.6%)
+
+═══════════════════════════════════════════════════════════════════════════
+MOST RECENT API CALL
+─────────────────────────────────────────────────────────────────────────
+
+Raw telemetry from last API response:
+  Input (fresh):         14,178 tokens
+  Cache read:                 0 tokens
+  Output:                   955 tokens
+  Reasoning:                562 tokens
+  Provider total:        15,695 tokens
+  ─────────────────────────────────────
+  Total:                 15,695 tokens
+
+═══════════════════════════════════════════════════════════════════════════
+SESSION TOTALS (All 10 API calls)
+─────────────────────────────────────────────────────────────────────────
+
+Assistant messages observed: 11 (structural count)
+
+Total tokens processed across the entire session (for cost calculation):
+
+  Input tokens:          77,933 (fresh tokens across all calls)
+  Cache read:                 0 (cached tokens across all calls)
+  Cache write:                0 (tokens written to cache)
+  Output tokens:         12,779 (all model responses)
+  Reasoning tokens:       7,627 (thinking/reasoning)
+  ─────────────────────────────────────
+  Session Total:         98,339 tokens (for billing)
+  Cache read calls:           0 / 10
+  Cache write calls:          0 / 10
+
+═══════════════════════════════════════════════════════════════════════════
+ESTIMATED SESSION COST (API Key Pricing)
+─────────────────────────────────────────────────────────────────────────
+
+You appear to be on a subscription plan, so the public token cost estimate is shown below.
+Here's what this session would cost with direct API access:
+
+  Input tokens:          77,933 × $0.00/M  = $0.0000
+  Output tokens:         20,406 × $0.00/M  = $0.0000
+─────────────────────────────────────────────────────────────────────────
+ESTIMATED TOTAL: $0.0000
+
+Note: This estimate uses live OpenCode model metadata when available, then bundled models.json pricing.
+Actual API costs may vary based on provider and context size.
+
+═══════════════════════════════════════════════════════════════════════════
+TOOL DEFINITION COSTS (Tokenized from OpenCode tool metadata)
+─────────────────────────────────────────────────────────────────────────
+
+  Tool                Est. Tokens   Args   Complexity
+  ───────────────────────────────────────────────────────────────────
+  bash                     ~1,630       4   simple
+  task                     ~1,257       5   simple
+  todowrite                  ~734       1   complex (arrays/objects)
+  question                   ~536       1   complex (arrays/objects)
+  edit                       ~523       4   simple
+  read                       ~464       3   simple
+  webfetch                   ~358       3   simple
+  grep                       ~319       3   simple
+  glob                       ~297       2   simple
+  write                      ~276       2   simple
+  tokenscope                 ~205       3   simple
+  skill                      ~182       1   simple
+  invalid                     ~82       2   simple
+  ───────────────────────────────────────────────────────────────────
+  Total:             ~      6,863 tokens (13 enabled tools)
+
+  Note: Tokenized from the current OpenCode tool descriptions and JSON schemas.
+        Provider-specific schema wrapping may still add small overhead.
+
+═══════════════════════════════════════════════════════════════════════════
+CACHE EFFICIENCY
+─────────────────────────────────────────────────────────────────────────
+
+  Token Distribution:
+    Cache Read:                 0 tokens   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  0.0%
+    Fresh Input:           77,933 tokens   ██████████████████████████████  100.0%
+  ───────────────────────────────────────────────────────────────────
+  Cache Hit Rate:      0.0% (cache read / (cache read + fresh input))
+
+  Cost Analysis (approx @ $0.00/M input, $0.00/M cache read, $0.00/M cache write):
+    Without caching:   $0.0000  (77,933 tokens x $0.00/M)
+    With caching:      $0.0000  (fresh x $0.00/M + cache read x $0.00/M + cache write x $0.00/M)
+  ───────────────────────────────────────────────────────────────────
+  Cost Savings:        $0.0000  (0.0% reduction)
+  Effective Rate:      $0.00/M tokens  (vs. $0.00/M standard)
+
+═══════════════════════════════════════════════════════════════════════════
+SUMMARY
+─────────────────────────────────────────────────────────────────────────
+
+                          Cost        Tokens          API Calls
+  Session:           $    0.0000        98,339            10
+
+═══════════════════════════════════════════════════════════════════════════
