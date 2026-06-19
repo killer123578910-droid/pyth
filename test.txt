@@ -1,1 +1,75 @@
-heles
+Hàm	Mục đích	Kết quả trả về
+re.search(pattern, string)	Tìm vị trí đầu tiên khớp với pattern.	Match object hoặc None
+re.match(pattern, string)	Kiểm tra khớp ngay từ đầu chuỗi.	Match object hoặc None
+re.findall(pattern, string)	Tìm tất cả các chuỗi khớp với pattern.	List các chuỗi
+re.finditer(pattern, string)	Tìm tất cả các chuỗi khớp.	Iterator
+re.split(pattern, string)	Chia chuỗi dựa trên pattern.	List các chuỗi
+re.sub(pattern, repl, string)	Thay thế chuỗi khớp bằng repl.	String mới
+re.compile(pattern)	Biên dịch pattern thành một Object.	Regex Object
+🖋️ 2. Cú pháp viết Pattern (Syntax)
+2.1. Ký tự đặc biệt (Metacharacters)
+Ký tự	Ý nghĩa	Ví dụ
+.	Bất kỳ ký tự nào (trừ \n)	a.b
+^	Bắt đầu của chuỗi	^Hello
+$	Kết thúc của chuỗi	End$
+*	Xuất hiện 0 hoặc nhiều lần	ab*
++	Xuất hiện 1 hoặc nhiều lần	ab+
+?	Xuất hiện 0 hoặc 1 lần	ab?
+|	Phép HOẶC (OR)	cat|dog
+\	Thoát ký tự (Escape)	\.
+2.2. Tập hợp ký tự (Character Classes)
+Sử dụng dấu ngoặc vuông [] để định nghĩa một nhóm ký tự.
+- [abc]: Một trong các ký tự a, b hoặc c.
+- [a-z]: Một ký tự trong khoảng từ a đến z.
+- [0-9]: Một chữ số bất kỳ.
+- [a-zA-Z0-9]: Bất kỳ chữ cái (hoa/thường) hoặc chữ số nào.
+- [^abc]: (Phủ định) KHÔNG phải là a, b hoặc c.
+- [^a-z0-9]: (Phủ định) KHÔNG phải là chữ cái hoặc chữ số $\rightarrow$ Thường dùng để tách từ/loại bỏ dấu câu.
+2.3. Chuỗi ký tự đặc biệt (Special Sequences)
+Ký hiệu	Ý nghĩa
+\d	Chữ số (Digit)
+\D	KHÔNG phải chữ số
+\w	Chữ cái, số và dấu gạch dưới (Word)
+\W	KHÔNG phải chữ cái, số, gạch dưới
+\s	Khoảng trắng (space, tab, newline)
+\S	KHÔNG phải khoảng trắng
+\b	Biên của từ (Boundary)
+2.4. Định lượng (Quantifiers)
+Kiểm soát số lần xuất hiện của ký tự đứng trước.
+Cú pháp	Ý nghĩa	Ví dụ
+{n}	Chính xác $n$ lần	\d{10}
+{n,}	Ít nhất $n$ lần	\d{3,}
+{n,m}	Từ $n$ đến $m$ lần	\d{2,4}
+🚩 3. Cờ tùy chỉnh (Flags)
+Truyền vào hàm để thay đổi hành vi của Regex.
+- re.IGNORECASE (hoặc re.I): Không phân biệt chữ hoa, chữ thường.
+- re.MULTILINE (hoặc re.M): ^ và $ khớp với đầu/cuối mỗi dòng thay vì toàn bộ chuỗi.
+- re.DOTALL (hoặc re.S): Dấu . khớp với cả ký tự xuống dòng \n.
+💡 4. Chiến thuật xây dựng Pattern
+Chiến thuật "Danh sách đen" (Blacklist) $\rightarrow$ [abc]
+- Cách làm: Liệt kê những ký tự muốn tách/xóa.
+- Rủi ro: Dễ bị thiếu ký tự (ví dụ: quên dấu , hoặc ()), dẫn đến sai kết quả.
+Chiến thuật "Danh sách trắng" (Whitelist) $\rightarrow$ [^abc]
+- Cách làm: Định nghĩa những gì muốn giữ lại, tất cả những thứ còn lại đều bị loại bỏ.
+- Ưu điểm: Tuyệt đối an toàn, không sợ thiếu dấu câu.
+- Ví dụ: re.split(r'[^a-z0-9]', text) $\rightarrow$ Tách chuỗi bởi bất kỳ thứ gì không phải là chữ và số.
+🚀 5. Ví dụ tổng hợp (Cheat Sheet)
+import re
+
+text = "Chào bạn! Email: contact@gmail.com, Phone: 0901234567. Date: 19/06/2026"
+
+# 1. Trích xuất số điện thoại (10 chữ số)
+phone = re.findall(r'\d{10}', text) 
+
+# 2. Trích xuất Email
+email = re.findall(r'[\w\.-]+@[\w\.-]+', text)
+
+# 3. Tách tất cả các từ (loại bỏ mọi dấu câu/khoảng trắng)
+words = re.findall(r'[a-z0-9]+', text.lower())
+
+# 4. Thay thế mọi ký tự không phải chữ số thành khoảng trắng
+clean_text = re.sub(r'[^0-9]', ' ', text)
+
+# 5. Kiểm tra chuỗi có bắt đầu bằng chữ "Chào" không
+is_greet = re.match(r'^Chào', text)
+Lưu ý quan trọng: Luôn sử dụng Raw String r'pattern' khi viết Regex trong Python để tránh lỗi với ký tự \.
